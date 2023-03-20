@@ -1,0 +1,13 @@
+#book-title {
+    height: 300px;
+    background: lightgray;
+}
+
+#book-inf {
+    align-items: center;
+    margin-top: 50px;
+}
+
+#book-direct {
+    background: lightgray;
+}
