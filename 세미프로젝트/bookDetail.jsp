@@ -50,15 +50,21 @@
                 </div>
             </div>
 
-            <hr><hr>
+            <hr>
 
             <div id="book-direct">
                 <div>
                     <p>2023 . 03 . 20</p>
                 </div>
                 <div>
-                    <button>판매자에게 쪽지 보내기.</button>
+                    <button id="">판매자에게 쪽지 보내기.</button>
                 </div>
+            </div>
+
+            <hr>
+
+            <div>
+                
             </div>
         </div>
         
