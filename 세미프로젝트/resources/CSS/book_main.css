@@ -53,6 +53,7 @@
     border: none;
     background: none;
     /* display: flex; */
+    color: white;
 }
 
 #book-home-btn-img ,
@@ -67,7 +68,10 @@
 #book-page-btn1,
 #book-page-btn2,
 #book-page-btn3,
-#book-page-btn4 {
+#book-page-btn4,
+.book-img,
+#next ,
+#prev {
    cursor: pointer;   
 }
 

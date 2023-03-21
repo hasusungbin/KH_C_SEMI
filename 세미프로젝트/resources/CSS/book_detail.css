@@ -8,6 +8,136 @@
     margin-top: 50px;
 }
 
+#book-body {
+    margin-top: 50px;
+}
+
 #book-direct {
     background: lightgray;
+}
+
+#book-home-btn , #book-sell-btn {
+    color: white;
+}
+
+#send-mesage {
+    background: rgb(57, 189, 235);
+    width: 500px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#send-mesage:hover {
+    cursor: pointer;
+}
+
+#book-status {
+    background-color: lightgray;
+}
+
+#book-status-img1 ,
+#book-status-img2 {
+    width: 250px;
+    height: 250px;
+    background-color: darkgray;
+    float: left;
+}
+
+#book-status-img2 {
+    margin-left: 30px;
+}
+
+#book-status-img1:hover ,
+#book-status-img2:hover {
+    cursor: pointer;
+}
+
+#book-trade {
+    background-color: lightgray;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal .bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.bg1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hidden {
+    display: none;
+}
+
+.modalBox {
+    position: absolute;
+    background-color: #fff;
+    width: 400px;
+    height: 398px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addDdayBody .inputField {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 13px 12px;
+    border: 0;
+    box-shadow: 0 0 0 1px #e1e6ea inset;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    color: #333;
+}
+.addDdayBody .inputBox {
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.addDdayBody .inputBox .dayChipWrapper {
+    display: flex;
+    margin-bottom: 12px;
+}
+.addDdayBody .inputBox .dayChipWrapper .dayChip {
+    padding: 6px 12px;
+    border: 1px solid #e1e6ea;
+    height: 38px;
+    border-radius: 40px;
+    font-size: 13px;
+    color: #96a6b5;
+    background-color: #fff;
+    margin-right: 8px;
+}
+
+#fullBlueBtn1{
+    padding: 15px 0;
+    background-color: #51a9fe;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0 0 13px 13px;
 }

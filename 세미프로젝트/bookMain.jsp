@@ -12,6 +12,7 @@
     </style>
     <link rel="stylesheet" href="resources/CSS/base.css">
     <link rel="stylesheet" href="resources/CSS/book_main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -31,10 +32,10 @@
         <div id="book-navbar">
             <div id="book-btn">
                 <button id="book-home-btn">
-                    <img src="resources/IMG/home.png" id="book-home-btn-img">
+                    <img src="resources/IMG/home.png" id="book-home-btn-img">Home
                 </button>
                 <button id="book-sell-btn">
-                    <img src="resources/IMG/pencil.png" id="book-sell-btn-img">
+                    <img src="resources/IMG/pencil.png" id="book-sell-btn-img">판매하기
                 </button>
             </div>
         </div>
@@ -48,7 +49,7 @@
             </div>
             <div id="book-body-content1">
                 <div id="book-inf">
-                    <div id="book-img">
+                    <div class="book-img">
                         <img src="resources/IMG/책이미지.jfif">
                     </div>
                     <div id="book-text">
@@ -57,7 +58,7 @@
                     </div>
                 </div>
                 <div id="book-inf">
-                    <div id="book-img">
+                    <div class="book-img">
                         <img src="resources/IMG/책이미지.jfif">
                     </div>
                     <div id="book-text">
@@ -66,7 +67,7 @@
                     </div>
                 </div>
                 <div id="book-inf">
-                    <div id="book-img">
+                    <div class="book-img">
                         <img src="resources/IMG/책이미지.jfif">
                     </div>
                     <div id="book-text">
@@ -75,7 +76,7 @@
                     </div>
                 </div>
                 <div id="book-inf">
-                    <div id="book-img">
+                    <div class="book-img">
                         <img src="resources/IMG/책이미지.jfif">
                     </div>
                     <div id="book-text">
@@ -89,7 +90,7 @@
 
             <div id="book-body-content2">
                 <div id="book-inf">
-                    <div id="book-img">
+                    <div class="book-img">
                         <img src="resources/IMG/책이미지.jfif">
                     </div>
                     <div id="book-text">
@@ -98,7 +99,7 @@
                     </div>
                 </div>
                 <div id="book-inf">
-                    <div id="book-img">
+                    <div class="book-img">
                         <img src="resources/IMG/책이미지.jfif">
                     </div>
                     <div id="book-text">
@@ -107,7 +108,7 @@
                     </div>
                 </div>
                 <div id="book-inf">
-                    <div id="book-img">
+                    <div class="book-img">
                         <img src="resources/IMG/책이미지.jfif">
                     </div>
                     <div id="book-text">
@@ -116,7 +117,7 @@
                     </div>
                 </div>
                 <div id="book-inf">
-                    <div id="book-img">
+                    <div class="book-img">
                         <img src="resources/IMG/책이미지.jfif">
                     </div>
                     <div id="book-text">
@@ -128,17 +129,33 @@
         </div>
         <div id="book-footer">
             <div id="book-page">
-                <button>&lt;</button>
+                <button id="next">&lt;</button>
                 <button id="book-page-btn1">1</button>
                 <button id="book-page-btn2">2</button>
                 <button id="book-page-btn3">3</button>
                 <button id="book-page-btn4">4</button>
-                <button>&gt;</button>
+                <button id="prev">&gt;</button>
             </div>
         </div>
         
         
 
     </div>
+
+    <script>
+        $(function(){ 
+            $("#book-home-btn-img").click(function(){ // 메인페이지로 이동
+                open("http://127.0.0.1:3000/bookMain.jsp")
+            })
+
+            $(".book-img").click(function(){ // 상세페이지로 이동
+                $(location).attr("href", "http://127.0.0.1:3000/bookDetail.jsp");
+            })
+
+            $("#book-sell-btn-img").click(function(){ // 판매페이지로 이동
+                $(location).attr("href", "http://127.0.0.1:3000/bookSell.jsp");
+            })
+        })
+    </script>
 </body>
 </html>
